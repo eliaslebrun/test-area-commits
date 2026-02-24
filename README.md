@@ -1,6 +1,6 @@
 # Resume — Projects Section
 
-> Two versions provided: a **concise one** (pick the best ~6 projects) and a **full one** (all notable projects).
+> Two versions provided: a **concise one** (pick the best ~7 projects) and a **full one** (all notable projects).
 > Ordered by relevance and recency (Semester 5 → 4 → 2).
 
 ---
@@ -8,6 +8,11 @@
 ## ✅ VERSION A — Concise (recommended for a 1-page resume)
 
 ### Projects
+
+---
+
+**FerrumOS — Operating System in Rust** | *Rust / Systems Programming / OS Kernel / Memory Management / ELF* | Ongoing
+> Building a fully custom operating system from scratch in Rust as a team project. Implementing all core kernel layers: boot sequence, CPU interrupt handling, virtual memory management with strict kernel/user space isolation, basic device drivers, process scheduling, syscall interface, filesystem, and ELF binary loading. Chose Rust for its compile-time memory safety guarantees — eliminating use-after-free and data races — while retaining full low-level control, with `unsafe` confined to audited zones.
 
 ---
 
@@ -46,6 +51,16 @@
 ## 📋 VERSION B — Full Projects List (for portfolio / LinkedIn / detailed CV)
 
 ### Projects
+
+---
+
+### Ongoing
+
+**FerrumOS — Operating System in Rust** | *Rust / Systems Programming / OS Kernel / Memory Management / ELF / x86-64*
+> Team project building a complete operating system from scratch in Rust, designed for learning, experimentation, and progressively growing toward real daily use. Implementing every kernel layer from the ground up: boot sequence (multiboot), CPU interrupt and exception handling (IDT/GDT), virtual memory with paging and strict kernel/user space isolation, basic device drivers, process management, a simple scheduler, a syscall interface, filesystem support, and ELF binary loading. A server-oriented variant (FerrumOS Server) is also planned, focused on networking, monitoring, and deployment workloads.
+- Enforced `unsafe` isolation: all direct hardware access confined to audited, documented zones
+- Roadmap structured across three phases — Foundations, Functional Kernel, Maturity — with full technical documentation at each stage
+- Tested continuously in virtual machines; all architectural decisions justified with trade-offs documented
 
 ---
 
@@ -180,10 +195,10 @@
 
 | Category | Technologies |
 |---|---|
-| Languages | C, C++, Haskell, Python, JavaScript/TypeScript, Node.js |
+| Languages | C, C++, Haskell, Rust, Python, JavaScript/TypeScript, Node.js |
 | AI / ML | Neural networks (from scratch), Minimax/Alpha-Beta, Supervised Learning |
 | Cryptography | AES-128, RSA, PGP, XOR, Big-integer arithmetic |
-| Systems | ptrace, malloc/brk, ELF, virtual machines, process scheduling |
+| Systems | OS kernel (boot, interrupts, virtual memory, syscalls), ptrace, malloc/brk, ELF, virtual machines, process scheduling |
 | Networks | TCP sockets, select/poll, FTP (RFC 959), custom protocols |
 | DevOps | Docker, Docker Compose, Jenkins, Ansible, CI/CD, JCasC |
 | Web | REST APIs, JWT, OAuth2, Express, MySQL, React |
